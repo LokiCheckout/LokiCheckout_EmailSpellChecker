@@ -1,0 +1,17 @@
+{
+  "name": "loki-checkout/magento2-email-spell-checker",
+  "version": "1.0.0",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "LokiCheckout\\EmailSpellChecker\\": ""
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<?php
+declare(strict_types=1);
+
+/** @version 2.1.2 */
+
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\Escaper;
+
+/** @var Template $block */
+/** @var Escaper $escaper */
+?>
+<script>
+    LokiComponentValidator.validators.email = function (component) {
+        if (/\S+@\S+\.\S+/.test(component.value) === false) {
+            component.messages.push({type:'error', text: '<?= $escaper->escapeHtml(__('Invalid email')) ?>'});
+            return false;
+        }
+
+        const suggestion = emailSpellChecker.run({
+            email: component.value
+        })
+
+        if (suggestion) {
+            const message = '<?= $escaper->escapeHtml(__('Perhaps you mean %1')) ?>';
+            component.messages.push({type: 'error', text: message.replace('%1', suggestion.full)});
+            return false;
+        }
+
+        return true;
+    }
+</script>
