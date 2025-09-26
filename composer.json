@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "N/A",
     "type": "magento2-module",
+    "license": "OSL-3.0",
     "require": {
         "magento/framework": "*"
     },
