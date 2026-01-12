@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 12 January 2026
+### Fixed
+- Add new GitHub Action workflows
+- Copy generic CI/CD files
+- Update composer keywords
+- Update composer keywords
+- Update composer keywords
+
 ## [1.0.1] - 30 September 2025
 ### Fixed
 - Add license
