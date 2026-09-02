@@ -5,7 +5,8 @@
     "type": "magento2-module",
     "license": "OSL-3.0",
     "require": {
-        "magento/framework": "*"
+        "magento/framework": "*",
+        "php": ">=8.2 <8.6"
     },
     "autoload": {
         "files": [
