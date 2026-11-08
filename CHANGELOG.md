@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.3] - 08 November 2026
+### Fixed
+- Remove PHP 8.1 support, add PHP 8.5 support
+
 ## [1.0.2] - 12 January 2026
 ### Fixed
 - Add new GitHub Action workflows
